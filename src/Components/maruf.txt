@@ -1,0 +1,1 @@
+py-3.5 px-5 rounded-10 bg-dark-6 text-sm leading-150 font-medium text-gray-50 block text-center cursor-pointer 3xl:py-4.8 3xl:px-6 3xl:rounded-xl 3xl:text-lg 3xl:leading-150 uppercase

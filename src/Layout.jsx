@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
     <Header/>
-      <main className="">
+      <main className="max-w-wrapper m-auto">
         <Outlet />
       </main>
       <Footer/>

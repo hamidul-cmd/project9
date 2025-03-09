@@ -17,11 +17,11 @@ function Approuts() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About/>} />
-            <Route path="/blog" element={<Blog/>} />
+            <Route path="/blogs" element={<Blog/>} />
             <Route path="/careers" element={<Careers/>} />
             <Route path="/contact" element={<Contact/>} />
-            <Route path="/project" element={<Project/>} />
-            <Route path="/Service" element={<Service/>} />
+            <Route path="/projects" element={<Project/>} />
+            <Route path="/services" element={<Service/>} />
           </Route>
         </Routes>
       </BrowserRouter>
