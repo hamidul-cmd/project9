@@ -6,9 +6,9 @@ function Header() {
   const navelinks = ["services", "projects", "about", "careers", "blogs"];
   return (
     <>
-      <header className="px-4 pt-10 pb-5 relative z-[500] bg-dark-6 xll:px-10 xll:pt-7.5 xll:pb-10 3xl:px-12.5 3xl:pt-7.5 3xl:pb-5">
+      <header className="px-4 pt-10 pb-5 relative z-[1000] bg-dark-6 xll:px-10 xll:pt-7.5 xll:pb-10 3xl:px-12.5 3xl:pt-7.5 3xl:pb-5 before:content-[''] before:h-full before:w-full before:absolute before:left-0 before:top-0 before:bg-dark-6 xll:before:hidden before:z-[400]">
         <ul
-          className={`flex gap-3.5 absolute top-[90%] left-4 w-[358px] text-white flex-col items-center bg-dark-10 rounded-10 overflow-hidden transition-transform duration-500 ease-linear z-[200] xll:hidden font-roboto__mono ${
+          className={`flex gap-3.5 absolute top-[90%] left-0 w-full text-white flex-col items-center bg-dark-10 rounded-10 overflow-hidden transition-transform duration-500 ease-linear z-[200] xll:hidden font-roboto__mono ${
             showmenu ? "translate-y-0 py-5" : "translate-y-[-150%] p-0"
           }`}
         >
@@ -44,7 +44,7 @@ function Header() {
             </Link>
           </li>
         </ul>
-        <div className="flex justify-between items-center relative bg-dark-10 rounded-10 p-3.5 z-[600] before:content-[''] before:h-full before:w-full before:absolute before:left-0 before:top-0 before:translate-y-[-100%] before:bg-dark-6 xll:before:hidden xll:p-5 xll:pl-10 3xl:p-6 3xl:pl-12.5">
+        <div className="flex justify-between items-center relative bg-dark-10 rounded-10 p-3.5 z-[600] xll:p-5 xll:pl-10 3xl:p-6 3xl:pl-12.5">
           <Link to="/">
             <div className="xll:hidden w-fit">
               <svg
@@ -197,7 +197,7 @@ function Header() {
               >
                 <path
                   d="M3 6.75C3 6.33579 3.33579 6 3.75 6H20.25C20.6642 6 21 6.33579 21 6.75C21 7.16421 20.6642 7.5 20.25 7.5H3.75C3.33579 7.5 3 7.16421 3 6.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM11.25 17.25C11.25 16.8358 11.5858 16.5 12 16.5H20.25C20.6642 16.5 21 16.8358 21 17.25C21 17.6642 20.6642 18 20.25 18H12C11.5858 18 11.25 17.6642 11.25 17.25Z"
-                  fill="white"
+                  fill={showmenu ? "#e7beb1" :"#fff"}
                 />
               </svg>
             </div>

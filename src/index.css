@@ -36,10 +36,14 @@
   --font-roboto__mono: "Roboto Mono", monospace;
   --text-67: 67px;
   --text-51: 51px;
+  --text-58: 58px;
   --text-38: 38px;
   --text-28: 28px;
   --text-22: 22px;
   --text-12: 12px;
+  --text-78: 78px;
+  --text-40: 40px;
+  --text-60: 60px;
 
   --radius-20: 20px;
   --radius-10: 10px;
@@ -95,4 +99,17 @@ body {
 }
 header ul li a.active {
   color: var(--color-orange-80);
+}
+
+.hero__slide {
+  animation: herosnimation 17s linear infinite alternate-reverse;
+}
+
+@keyframes herosnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
 }
