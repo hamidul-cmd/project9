@@ -47,6 +47,8 @@
 
   --radius-20: 20px;
   --radius-10: 10px;
+  --radius-14: 14px;
+  --radius-16: 16px;
 
   --spacing-0_5: 2px;
   --spacing-1_4: 5px;
@@ -60,6 +62,7 @@
   --spacing-5_3: 23px;
   --spacing-6_5: 25px;
   --spacing-6_6: 26px;
+  --spacing-6_7: 28px;
   --spacing-7_5: 30px;
   --spacing-8_5: 34px;
   --spacing-10_5: 42px;
@@ -87,6 +90,7 @@
   --leading-140: 140%;
   --leading-150: 150%;
   --leading-160: 160%;
+  --leading-auto: auto;
 
   --container-wrapper: 1920px;
 
@@ -104,6 +108,20 @@ header ul li a.active {
 .hero__slide {
   animation: herosnimation 17s linear infinite alternate-reverse;
 }
+.wrapper__div {
+  padding: 10px;
+  border-radius: 24px;
+  border: 2px solid #1f1f1f;
+}
+.btn__orenge {
+  padding: 14px 20px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--color-orange-60);
+  color: var(--color-dark-6);
+  font-size: 14px;
+  line-height: 150%;
+}
 
 @keyframes herosnimation {
   0% {
@@ -111,5 +129,23 @@ header ul li a.active {
   }
   100% {
     transform: translateX(-60%);
+  }
+}
+@media (min-width: 768px) {
+  .service__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 768px) {
+  .journey__grid,
+  .service__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper__div {
+    padding: 20px;
   }
 }
