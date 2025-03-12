@@ -9,7 +9,7 @@ function ServiceCird({ tittle, pera, prize, icon }) {
             <div className="p-3.5 rounded-10 bg-dark-12 border border-dark-20 3xl:p-4">
               {icon}
             </div>
-            <h3 className="text-xl font-medium leading-150 text-orange-95 3xl:text-22 3xl:text-3xl 3xl:leading-150">
+            <h3 className="text-xl font-medium leading-150 text-orange-95 3xl:text-22 3xl:text-3xl 3xl:leading-150 uppercase service__cird">
               {tittle}
             </h3>
           </div>
@@ -33,7 +33,7 @@ function ServiceCird({ tittle, pera, prize, icon }) {
           </a>
         </div>
         <div className="mb-5 flex flex-col gap-1.5 xll:gap-4 3xl:gap-5 xll:mb-0">
-          <h4 className="text-lg font-medium leading-150 text-orange-95 xll:order-2 xll:text-right xll:text-22 3xl:text-3xl 3xl:leading-150">
+          <h4 className="text-lg font-medium leading-150 text-orange-95 xll:order-2 xll:text-right xll:text-22 3xl:text-3xl 3xl:leading-150 uppercase">
             Starts From {prize}
           </h4>
           <p className="text-sm leading-150 text-gray-70 xll:text-base xll:leading-150 3xl:text-lg 3xl:leading-150">

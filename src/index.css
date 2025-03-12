@@ -132,8 +132,11 @@ header ul li a.active {
   }
 }
 @media (min-width: 768px) {
-  .service__grid {
+  .service__grid{
     grid-template-columns: 1fr 1fr;
+  }
+  .workimg {
+    height: 348px;
   }
 }
 
@@ -142,10 +145,23 @@ header ul li a.active {
   .service__grid {
     grid-template-columns: 1fr 1fr;
   }
+  .workgrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1920px) {
   .wrapper__div {
     padding: 20px;
+  }
+  .workimg {
+    height: 426px;
+  }
+  .btn__orenge {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+  .service__cird {
+    font-size: 30px;
   }
 }
