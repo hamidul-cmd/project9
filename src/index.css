@@ -142,7 +142,7 @@ header ul li a.active {
 
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
   .journey__grid,
-  .service__grid {
+  .service__grid, .testimonials__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workgrid {
