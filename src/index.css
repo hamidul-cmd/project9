@@ -43,6 +43,7 @@
   --text-12: 12px;
   --text-78: 78px;
   --text-40: 40px;
+  --text-42: 42px;
   --text-60: 60px;
 
   --radius-20: 20px;
@@ -105,8 +106,11 @@ header ul li a.active {
   color: var(--color-orange-80);
 }
 
-.hero__slide {
+.slide {
   animation: herosnimation 17s linear infinite alternate-reverse;
+}
+.footer__slide {
+  animation: herosnimation 30s linear infinite alternate-reverse;
 }
 .wrapper__div {
   padding: 10px;
@@ -132,7 +136,7 @@ header ul li a.active {
   }
 }
 @media (min-width: 768px) {
-  .service__grid{
+  .service__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workimg {
@@ -142,11 +146,42 @@ header ul li a.active {
 
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
   .journey__grid,
-  .service__grid, .testimonials__grid {
+  .service__grid,
+  .testimonials__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workgrid {
     grid-template-columns: 1fr 1fr;
+  }
+  .faq__p {
+    width: 290px;
+  }
+  .faq__from {
+    width: 50%;
+  }
+  .faq__perent {
+    gap: 10px;
+  }
+  .faq__box {
+    width: 50%;
+  }
+  .faq__top {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .faq__pera {
+    width: 100%;
+  }
+  .transform__text {
+    width: 500px;
+  }
+  .transform__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .faq__qqq {
+    width: 70%;
   }
 }
 

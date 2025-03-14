@@ -8,18 +8,31 @@ function TestimonialsCird({ tittle, name, pera, img, position }) {
           <h3 className="text-lg font-medium leading-150 text-orange-95 mb-4 uppercase xll:text-22 xll:mb-5 3xl:text-2xl 3xl:leading-150 3xl:mb-6">
             {tittle}
           </h3>
-          <p className="text-sm leading-150 text-gray-70 xll:text-base xll:leading-150 3xl:text-lg 3xl:leading-150">{pera}</p>
+          <p className="text-sm leading-150 text-gray-70 xll:text-base xll:leading-150 3xl:text-lg 3xl:leading-150">
+            {pera}
+          </p>
         </div>
         <div className="py-4 px-5 bg-dark-12 flex items-center justify-between xll:py-5 xll:px-7.5 3xl:py-7.5 3xl:px-10">
           <div className="flex items-center gap-2 xll:gap-2.5 3xl:gap-[15px]">
-            <img src={img} alt="" className="block h-10 w-10 xll:h-12.5 xll:w-12.5 3xl:h-14.5 3xl:w-14.5" />
+            <img
+              src={img}
+              alt=""
+              className="block h-10 w-10 xll:h-12.5 xll:w-12.5 3xl:h-14.5 3xl:w-14.5"
+            />
             <div>
-              <h4 className="text-base font-medium leading-150 text-orange-90 xll:text-lg xll:leading-150 3xl:text-xl 3xl:leading-150">{name}</h4>
-              <h5 className="text-sm leading-150 text-gray-50 xll:text-base xll:leading-150 3xl:text-lg 3xl:leading-150">{position}</h5>
+              <h4 className="text-base font-medium leading-150 text-orange-90 xll:text-lg xll:leading-150 3xl:text-xl 3xl:leading-150">
+                {name}
+              </h4>
+              <h5 className="text-sm leading-150 text-gray-50 xll:text-base xll:leading-150 3xl:text-lg 3xl:leading-150">
+                {position}
+              </h5>
             </div>
           </div>
           <div>
-            <a href="/" className="block p-2.5 bg-dark-12 border border-dark-20 rounded-full 3xl:p-3.5">
+            <a
+              href="/"
+              className="block p-2.5 bg-dark-12 border border-dark-20 rounded-full 3xl:p-3.5"
+            >
               <div className="rotate-45 w-fit">
                 <svg
                   className="h-5 w-5 3xl:h-6 3xl:w-6"

@@ -75,7 +75,7 @@ function Lefthero({ tittle1, tittle2, pera, button }) {
           {pera}
         </p>
         <div className=" relative h-[49px] bg-dark-6 rounded-lg overflow-hidden 3xl:h-[70px]">
-          <div className="absolute top-0 left-0 flex items-center gap-5 h-full hero__slide w-fit">
+          <div className="absolute top-0 left-0 flex items-center gap-5 h-full slide w-fit">
             {slide.map((data, i) => {
               return (
                 <div key={i} className="flex items-center gap-5 h-fit">

@@ -1,1 +1,5 @@
-py-3.5 px-5 rounded-10 bg-dark-6 text-sm leading-150 font-medium text-gray-50 block text-center cursor-pointer 3xl:py-4.8 3xl:px-6 3xl:rounded-xl 3xl:text-lg 3xl:leading-150 uppercase
+text-sm font-roboto__mono leading-150 text-gray-40 whitespace-nowrap xll:text-base 3xl:text-xl
+
+
+
+block h-2 w-2 bg-orange-60 rounded-full
