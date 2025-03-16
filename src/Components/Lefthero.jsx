@@ -19,7 +19,7 @@ function Lefthero({ tittle1, tittle2, pera, button }) {
       <div className="px-6 py-7.5 rounded-xl bg-dark-10 font-roboto__flex xll:px-14.5 xll:pt-20 xll:pb-4 xll:rounded-2xl grow 3xl:px-20 3xl:pt-24.5 3xl:pb-5">
         <div className="mb-5">
           <div className="mb-1 xll:flex xll:gap-5 xll:items-center xll:mb-0.5 3xl:gap-7.5">
-            <h1 className="text-28 font-semibold leading-150 text-orange-95 uppercase xll:text-58 3xl:text-78 3xl:leading-150">
+            <h1 className="text-28 font-semibold leading-150 text-orange-95 uppercase xll:text-58 3xl:text-78 3xl:leading-150 whitespace-nowrap">
               {tittle1}
             </h1>
             <div className="hidden xll:block">
@@ -38,7 +38,7 @@ function Lefthero({ tittle1, tittle2, pera, button }) {
                     />
                   </svg>
                 </div>
-                <div className="text-xl font-medium leading-150  text-orange-60 3xl:text-2xl 3xl:leading-150">
+                <div className="text-xl font-medium leading-150  text-orange-60 3xl:text-2xl 3xl:leading-150 whitespace-nowrap">
                   {button}
                 </div>
               </a>

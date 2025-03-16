@@ -105,7 +105,12 @@ body {
 header ul li a.active {
   color: var(--color-orange-80);
 }
-
+.webket {
+  -webkit-backdrop-filter: blur(20px);
+}
+.gotop {
+  animation: gotop 1.2s linear infinite alternate-reverse;
+}
 .slide {
   animation: herosnimation 17s linear infinite alternate-reverse;
 }
@@ -126,6 +131,14 @@ header ul li a.active {
   font-size: 14px;
   line-height: 150%;
 }
+@keyframes gotop {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
 
 @keyframes herosnimation {
   0% {
@@ -141,6 +154,14 @@ header ul li a.active {
   }
   .workimg {
     height: 348px;
+  }
+  .service__hero {
+    display: flex;
+    gap: 10px;
+  }
+  .service__hero_right {
+    margin: 0;
+    width: 443px;
   }
 }
 
@@ -198,5 +219,11 @@ header ul li a.active {
   }
   .service__cird {
     font-size: 30px;
+  }
+  .service__hero_right {
+    width: 593px;
+  }
+  .service__hero {
+    gap: 20px;
   }
 }
