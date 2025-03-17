@@ -90,7 +90,7 @@ function Footer() {
   const blogLinks = ["Business", "Design", "Development"];
   return (
     <>
-      <section className="px-4 xll:px-10 3xl:px-12.5 mt-2.5 xll:flex xll:gap-2.5 3xl:mt-5 3xl:gap-5 pb-5 xll:pb-10 3xl:pb-12.5">
+      <section className="px-4 xll:px-10 3xl:px-12.5 mt-2.5 xll:flex xll:gap-2.5 3xl:mt-5 3xl:gap-5 pb-5 xll:pb-10 3xl:pb-12.5 max-w-wrapper m-auto">
         <div className="mb-2.5 flex items-center justify-center gap-2.5 xll:grid xll:grid-cols-2 xll:gap-2.5 xll:w-[554px] xll:mb-0 3xl:w-[748px] 3xl:gap-5">
           {socialLinks.map((data, i) => {
             return (

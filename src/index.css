@@ -204,6 +204,23 @@ header ul li a.active {
   .faq__qqq {
     width: 70%;
   }
+  .service_box_wrapper {
+    display: flex;
+    gap: 10px;
+  }
+  .solution_cird {
+    width: 50%;
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  .success_cird {
+    width: 50%;
+  }
+  .success_cird_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1920px) {

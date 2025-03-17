@@ -1,5 +1,1 @@
-text-sm font-roboto__mono leading-150 text-gray-40 whitespace-nowrap xll:text-base 3xl:text-xl
-
-
-
-block h-2 w-2 bg-orange-60 rounded-full
+grow py-3.5 bg-dark-12 rounded-lg font-roboto__flex text-sm font-medium leading-150 text-gray-70

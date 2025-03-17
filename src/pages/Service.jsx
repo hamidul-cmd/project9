@@ -3,6 +3,11 @@ import Lefthero from "../Components/Lefthero";
 import serviceheroimg from "../assets/serviceheroimg.png";
 import Commontittle from "../Components/Commontittle";
 import ServiceCird from "../Components/ServiceCird";
+import SuccessCird from "../Components/SuccessCird";
+import Solution from "../Components/Solution";
+import TestimornialSection from "../Components/TestimornialSection";
+import FaqSection from "../Components/FaqSection";
+import Transform from "../Components/Transform";
 
 function Service() {
   const serviceCirdData = [
@@ -107,6 +112,52 @@ function Service() {
       prize: "$3,500",
     },
   ];
+  const klothink = [
+    {
+      icon: (
+        <svg
+          className="h-6 w-6 xll:h-6.7 xll:w-6.7 3xl:h-8.5 3xl:w-8.5"
+          viewBox="0 0 28 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M25.6663 14.5V22.9068C25.6663 24.4045 24.0902 25.3786 22.7506 24.7088C21.6679 24.1675 20.3781 24.2478 19.3708 24.9193C18.2378 25.6747 16.7616 25.6747 15.6285 24.9193L15.2171 24.645C14.4799 24.1535 13.5195 24.1535 12.7823 24.645L12.3708 24.9193C11.2378 25.6747 9.76159 25.6747 8.6285 24.9193C7.62128 24.2478 6.33147 24.1675 5.24874 24.7088C3.90915 25.3786 2.33301 24.4045 2.33301 22.9068V14.5C2.33301 8.05672 7.55635 2.83337 13.9997 2.83337C20.443 2.83337 25.6663 8.05672 25.6663 14.5ZM11.0207 17.2971C10.6325 17.0093 10.0845 17.0908 9.79673 17.479C9.50896 17.8672 9.5904 18.4152 9.97863 18.703C11.1131 19.5439 12.5005 20.0417 13.9997 20.0417C15.4988 20.0417 16.8862 19.5439 18.0207 18.703C18.409 18.4152 18.4904 17.8672 18.2026 17.479C17.9149 17.0908 17.3669 17.0093 16.9786 17.2971C16.1289 17.9269 15.1032 18.2917 13.9997 18.2917C12.8961 18.2917 11.8705 17.9269 11.0207 17.2971ZM18.6663 11.5834C18.6663 12.5499 18.144 13.3334 17.4997 13.3334C16.8553 13.3334 16.333 12.5499 16.333 11.5834C16.333 10.6169 16.8553 9.83337 17.4997 9.83337C18.144 9.83337 18.6663 10.6169 18.6663 11.5834ZM10.4997 13.3334C11.144 13.3334 11.6663 12.5499 11.6663 11.5834C11.6663 10.6169 11.144 9.83337 10.4997 9.83337C9.85534 9.83337 9.33301 10.6169 9.33301 11.5834C9.33301 12.5499 9.85534 13.3334 10.4997 13.3334Z"
+            fill="#CE7D63"
+          />
+        </svg>
+      ),
+      tittle: "Klothink",
+      industry: "E-commerce",
+      service: "Design & Development",
+    },
+  ];
+  const fitness = [
+    {
+      icon: (
+        <svg
+          className="h-6 w-6 xll:h-6.7 xll:w-6.7 3xl:h-8.5 3xl:w-8.5"
+          viewBox="0 0 28 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.16699 6.13423C8.16699 7.93998 10.1806 9.84219 11.8417 11.1042C12.774 11.8125 13.2401 12.1666 14.0003 12.1666C14.7605 12.1666 15.2267 11.8125 16.159 11.1042C17.8201 9.84221 19.8337 7.94001 19.8337 6.13422C19.8337 2.87902 16.6252 1.66369 14.0003 4.1783C11.3754 1.66369 8.16699 2.87902 8.16699 6.13423Z"
+            fill="#CE7D63"
+          />
+          <path
+            d="M7.30358 25.4531H7.00033C5.90038 25.4531 5.35041 25.4531 5.0087 25.1114C4.66699 24.7697 4.66699 24.2197 4.66699 23.1198V21.8225C4.66699 21.2176 4.66699 20.9151 4.82237 20.645C4.97774 20.3749 5.21214 20.2386 5.68094 19.9659C8.76733 18.1708 13.1505 17.1604 16.0759 18.9052C16.2725 19.0224 16.4492 19.164 16.6003 19.3336C17.2514 20.065 17.2039 21.1688 16.4535 21.8237C16.2951 21.9621 16.1262 22.0669 15.9561 22.1034C16.0959 22.0872 16.2298 22.0686 16.3577 22.0482C17.421 21.8786 18.3135 21.3104 19.1307 20.6932L21.239 19.1005C21.9823 18.539 23.0855 18.5389 23.8289 19.1002C24.4982 19.6056 24.7029 20.4376 24.2797 21.1159C23.7863 21.9068 23.0911 22.9186 22.4236 23.5369C21.7551 24.156 20.7599 24.7088 19.9474 25.101C19.0474 25.5354 18.0531 25.7857 17.0418 25.9494C14.9906 26.2814 12.853 26.2307 10.8227 25.8124C9.67495 25.576 8.48292 25.4531 7.30358 25.4531Z"
+            fill="#CE7D63"
+          />
+        </svg>
+      ),
+      tittle: "Fitness Tracker",
+      industry: "Health & Fitness",
+      service: "Mobile App Development",
+    },
+  ];
   return (
     <>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7 service__hero mt-5 xll:mt-12.5">
@@ -170,7 +221,36 @@ function Service() {
       </section>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7">
         <Commontittle tittle="Success Stories" button="View All" />
+        <div className="p-2.5 border-2 border-dark-12 rounded-16 mt-2.5 service_box_wrapper xll:flex xll:gap-2.5 xll:p-7.5 3xl:mt-5 3xl:p-12.5 3xl:rounded-20 3xl:gap-5">
+          {klothink.map((data) => {
+            return (
+              <SuccessCird
+                icon={data.icon}
+                tittle={data.tittle}
+                industry={data.industry}
+                service={data.service}
+              />
+            );
+          })}
+          <Solution />
+        </div>
+        <div className="p-2.5 border-2 border-dark-12 rounded-16 mt-2.5 service_box_wrapper xll:flex xll:gap-2.5 xll:p-7.5 3xl:mt-5 3xl:p-12.5 3xl:rounded-20 3xl:gap-5">
+          {fitness.map((data) => {
+            return (
+              <SuccessCird
+                icon={data.icon}
+                tittle={data.tittle}
+                industry={data.industry}
+                service={data.service}
+              />
+            );
+          })}
+          <Solution />
+        </div>
       </section>
+      <TestimornialSection />
+      <FaqSection />
+      <Transform />
     </>
   );
 }
