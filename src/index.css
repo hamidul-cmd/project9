@@ -168,7 +168,7 @@ header ul li a.active {
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
   .journey__grid,
   .service__grid,
-  .testimonials__grid {
+  .testimonials__grid, .features__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workgrid {
@@ -220,6 +220,9 @@ header ul li a.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .left__hero {
+    width: 70%;
   }
 }
 
