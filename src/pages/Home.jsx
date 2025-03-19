@@ -8,28 +8,34 @@ import FaqSection from "../Components/FaqSection";
 import TestimornialSection from "../Components/TestimornialSection";
 import Transform from "../Components/Transform";
 import Worksection from "../Components/Worksection";
+import CountUp from "react-countup";
 
 function Home() {
   const herobox = [
     {
       tittle: "Clients",
-      number: "200+",
+      number: "200",
+      type: "+",
     },
     {
       tittle: "PROJECTS",
-      number: "280+",
+      number: "280",
+      type: "+",
     },
     {
       tittle: "HAPPY CLIENTS",
-      number: "100%",
+      number: "100",
+      type: "%",
     },
     {
       tittle: "FOLLOWER",
-      number: "420K",
+      number: "420",
+      type: "K",
     },
     {
       tittle: "Years Of Experience",
-      number: "10+",
+      number: "10",
+      type: "+",
     },
   ];
   const journeycardData = [
@@ -199,7 +205,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-4 hidden xll:flex xll:gap-2.5 xll:p-2.5 border-2 border-dark-12 rounded-2xl 3xl:p-5 3xl:rounded-20 3xl:gap-5">
+        <div className="mt-4 hidden xll:grid xll:grid-cols-6 xll:gap-2.5 xll:p-2.5 border-2 border-dark-12 rounded-2xl 3xl:p-5 3xl:rounded-20 3xl:gap-5">
           {herobox.map((data, i) => {
             return (
               <div
@@ -210,7 +216,8 @@ function Home() {
                   {data.tittle}
                 </h5>
                 <h5 className="text-40 font-semibold leading-7 text-orange-70 font-roboto__flex 3xl:text-60 number">
-                  {data.number}
+                  <CountUp start={0} end={data.number} duration={3} delay={0} />
+                  <span>{data.type}</span>
                 </h5>
               </div>
             );
@@ -274,7 +281,7 @@ function Home() {
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7">
         <div className="wrapper__div">
           <Commontittle tittle="Our Works" button="ALL Works" />
-          <Worksection/>
+          <Worksection />
         </div>
       </section>
       <TestimornialSection />

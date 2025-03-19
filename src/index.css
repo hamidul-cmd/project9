@@ -168,7 +168,10 @@ header ul li a.active {
 @media only screen and (max-width: 1439px) and (min-width: 768px) {
   .journey__grid,
   .service__grid,
-  .testimonials__grid, .features__grid {
+  .testimonials__grid,
+  .features__grid,
+  .membar__grid,
+  .achievemunts__grid, .awards__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workgrid {
@@ -223,6 +226,20 @@ header ul li a.active {
   }
   .left__hero {
     width: 70%;
+  }
+  .about__hero {
+    display: flex;
+    gap: 10px;
+  }
+  .about__left {
+    width: 70%;
+  }
+  .about__right {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  .membar__img {
+    height: 300px;
   }
 }
 
