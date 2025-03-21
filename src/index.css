@@ -171,7 +171,7 @@ header ul li a.active {
   .testimonials__grid,
   .features__grid,
   .membar__grid,
-  .achievemunts__grid, .awards__grid {
+  .achievemunts__grid, .awards__grid,.join__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workgrid {
@@ -241,6 +241,9 @@ header ul li a.active {
   .membar__img {
     height: 300px;
   }
+  .careers__right_hero {
+    width: 443px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -262,5 +265,8 @@ header ul li a.active {
   }
   .service__hero {
     gap: 20px;
+  }
+  .careers__right_hero {
+    width:593px;
   }
 }

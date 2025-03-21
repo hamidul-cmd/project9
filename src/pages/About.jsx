@@ -123,8 +123,8 @@ function About() {
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-20 3xl:mb-24.7 about__hero xll:flex xll:gap-2.5 3xl:gap-5">
         <div className="md:flex gap-4 hero__wraper about__left">
           <Lefthero
-            tittle1="Digital Solutions"
-            tittle2="That Drive Success"
+            tittle1="Elevating Brands"
+            tittle2="in the Digital Age"
             button="Start a Project"
             pera="At NexGen, we believe in the transformative power of digital solutions. Our team of experts is dedicated to helping businesses like yours thrive in the fast-paced digital landscape."
           />
