@@ -171,7 +171,9 @@ header ul li a.active {
   .testimonials__grid,
   .features__grid,
   .membar__grid,
-  .achievemunts__grid, .awards__grid,.join__grid {
+  .achievemunts__grid,
+  .awards__grid,
+  .join__grid, .apply__grid {
     grid-template-columns: 1fr 1fr;
   }
   .workgrid {
@@ -267,6 +269,6 @@ header ul li a.active {
     gap: 20px;
   }
   .careers__right_hero {
-    width:593px;
+    width: 593px;
   }
 }

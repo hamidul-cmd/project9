@@ -2,6 +2,10 @@ import React from "react";
 import Lefthero from "../Components/Lefthero";
 import Commontittle from "../Components/Commontittle";
 import JoinCird from "../Components/JoinCird";
+import AchievementCird from "../Components/AchievementCird";
+import TestimornialSection from "../Components/TestimornialSection";
+import FaqSection from "../Components/FaqSection";
+import Transform from "../Components/Transform";
 
 function Careers() {
   const joinciraddata = [
@@ -106,6 +110,50 @@ function Careers() {
       pera: "Strong organizational and communication skills, ability to manage project timelines and resources, experience in Agile project management methodologies.",
     },
   ];
+  const applycirddataphone = [
+    {
+      date: "Step 01",
+      tittle: "Explore Job Listings",
+      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
+    },
+    {
+      date: "Step 02",
+      tittle: "Review Job Description",
+      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
+    },
+    {
+      date: "Step 03",
+      tittle: "Prepare Your Application",
+      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
+    },
+    {
+      date: "Step 04",
+      tittle: "Review Job Description",
+      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
+    },
+  ];
+  const applycirddatadesktop = [
+    {
+      date: "Step 05",
+      tittle: "Submit Your Application",
+      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
+    },
+    {
+      date: "Step 06",
+      tittle: "Application Review",
+      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
+    },
+    {
+      date: "Step 07",
+      tittle: "Upload Your Documents",
+      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
+    },
+    {
+      date: "Step 08",
+      tittle: "Interview Process",
+      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
+    },
+  ];
   return (
     <>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-20 3xl:mb-24.7 about__hero xll:flex xll:gap-2.5 3xl:gap-5">
@@ -156,7 +204,7 @@ function Careers() {
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7">
         <div className="wrapper__div">
           <Commontittle tittle="Join Our Team at NexGen" />
-          <div className="mt-2.5 3xl:mt-5 grid grid-cols-1 gap-2.5 xll:grid-cols-2 join__grid">
+          <div className="mt-2.5 3xl:mt-5 grid grid-cols-1 gap-2.5 xll:grid-cols-2 join__grid 3xl:gap-5">
             {joinciraddata.map((data, i) => {
               return (
                 <JoinCird
@@ -173,6 +221,40 @@ function Careers() {
           </div>
         </div>
       </section>
+      <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7">
+        <div className="wrapper__div">
+          <Commontittle tittle="How to Apply" />
+          <div className="mt-2.5 3xl:mt-5 grid grid-cols-1 gap-2.5 xll:grid-cols-4 apply__grid 3xl:gap-5">
+            {window.innerWidth > 380
+              ? applycirddataphone.map((data, i) => {
+                  return (
+                    <AchievementCird
+                      key={i}
+                      date={data.date}
+                      tittle={data.tittle}
+                      pera={data.pera}
+                    />
+                  );
+                })
+              : ""}
+            {window.innerWidth > 1439
+              ? applycirddatadesktop.map((data, i) => {
+                  return (
+                    <AchievementCird
+                      key={i}
+                      date={data.date}
+                      tittle={data.tittle}
+                      pera={data.pera}
+                    />
+                  );
+                })
+              : ""}
+          </div>
+        </div>
+      </section>
+      <TestimornialSection />
+      <FaqSection />
+      <Transform />
     </>
   );
 }
