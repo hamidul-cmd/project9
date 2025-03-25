@@ -1,6 +1,6 @@
 import React from "react";
 
-function RoundButton({name}) {
+function RoundButton({ name }) {
   return (
     <>
       <a

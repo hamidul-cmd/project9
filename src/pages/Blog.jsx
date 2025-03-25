@@ -36,7 +36,9 @@ function Blog() {
             </div>
             <div className="hidden xll:block col-span-2 p-12.5 bg-dark-10 rounded-xl space-y-10 font-roboto__flex 3xl:p-14.5 3xl:space-y-12.5 3xl:rounded-14">
               <div className="space-y-4 3xl:space-y-5">
-                <h3 className="text-2xl font-medium leading-150 text-orange-95 uppercase 3xl:text-3xl 3xl:leading-150">Web Design Trends Shaping 2024</h3>
+                <h3 className="text-2xl font-medium leading-150 text-orange-95 uppercase 3xl:text-3xl 3xl:leading-150">
+                  Web Design Trends Shaping 2024
+                </h3>
                 <div className="flex w-fit gap-4 3xl:gap-5">
                   <div className="flex items-center gap-1.5 py-2 px-3 bg-dark-12 rounded-full text-sm leading-150 3xl:py-2.5 3xl:px-4 3xl:gap-2 3xl:text-lg 3xl:leading-150">
                     <span className="text-gray-70">Category</span>
@@ -51,7 +53,9 @@ function Blog() {
                   <div className="flex items-center gap-1.5 py-2 px-3 bg-dark-12 rounded-full text-sm leading-150 3xl:py-2.5 3xl:px-4 3xl:gap-2 3xl:text-lg 3xl:leading-150">
                     <span className="text-gray-70">Author</span>
                     <span className="block h-1 w-1 bg-orange-60 rounded-full"></span>
-                    <span className="font-medium text-gray-90">Laura Turner</span>
+                    <span className="font-medium text-gray-90">
+                      Laura Turner
+                    </span>
                   </div>
                 </div>
               </div>
@@ -64,8 +68,12 @@ function Blog() {
               <div className="flex justify-between items-center">
                 <RoundButton name="Read Full Blog" />
                 <div className="flex items-center gap-2.5 3xl:gap-3">
-                  <h5 className="text-base leading-150 text-gray-70 3xl:text-lg 3xl:leading-150">Published Date</h5>
-                  <h4 className="text-xl font-medium leading-150 text-orange-95 uppercase 3xl:text-2xl 3xl:leading-150">7th February 2023</h4>
+                  <h5 className="text-base leading-150 text-gray-70 3xl:text-lg 3xl:leading-150">
+                    Published Date
+                  </h5>
+                  <h4 className="text-xl font-medium leading-150 text-orange-95 uppercase 3xl:text-2xl 3xl:leading-150">
+                    7th February 2023
+                  </h4>
                 </div>
               </div>
             </div>
