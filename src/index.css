@@ -176,6 +176,9 @@ header ul li a.active {
   .join__grid, .apply__grid {
     grid-template-columns: 1fr 1fr;
   }
+  .blog__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .workgrid {
     grid-template-columns: 1fr 1fr;
   }
