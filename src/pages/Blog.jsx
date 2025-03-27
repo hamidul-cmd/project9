@@ -1,30 +1,15 @@
 import React from "react";
 import Commontittle from "../Components/Commontittle";
-import blogcird1 from "../assets/blogcird1.png";
-import blogcird2 from "../assets/blogcird2.png";
-import blogcird3 from "../assets/blogcird3.png";
 import blogimg from "../assets/blogimg.png";
 import BlogCird from "../Components/BlogCird";
 import RoundButton from "../Components/RoundButton";
+import { blogcirddata } from "../data/BlogData";
+import TestimornialSection from "../Components/TestimornialSection";
+import FaqSection from "../Components/FaqSection";
+import Transform from "../Components/Transform";
 
 function Blog() {
-  const blogcirddata = [
-    {
-      img: blogcird1,
-      tittle: "Optimizing Mobile User Experience for Higher Conversions",
-      pera: "Mobile devices dominate digital interactions, making mobile user experience crucial for conversion rates. Explore mobile design best practices...",
-    },
-    {
-      img: blogcird2,
-      tittle: "Mastering the Art of Minimalistic Design",
-      pera: "Simplicity and elegance take center stage in minimalistic design. Learn the principles of minimalism, how to effectively communicate with fewer elements...",
-    },
-    {
-      img: blogcird3,
-      tittle: "The Psychology of Visual Design in Branding",
-      pera: "Uncover the impact of visual elements in branding and how they influence customer perceptions and emotions. Explore color psychology, typography choices...",
-    },
-  ];
+
   return (
     <>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7">
@@ -80,15 +65,20 @@ function Blog() {
             {blogcirddata.map((data, i) => {
               return (
                 <BlogCird
+                  key={i}
                   img={data.img}
                   tittle={data.tittle}
                   pera={data.pera}
+                  id={`/blog/${data.id}`}
                 />
               );
             })}
           </div>
         </div>
       </section>
+      <TestimornialSection />
+      <FaqSection />
+      <Transform />
     </>
   );
 }

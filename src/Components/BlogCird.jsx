@@ -1,7 +1,8 @@
 import React from "react";
 import RoundButton from "./RoundButton";
 
-function BlogCird({ img, tittle, pera }) {
+function BlogCird({ img, tittle, pera, id }) {
+
   return (
     <>
       <div className="p-3.5 pb-6 bg-dark-10 rounded-xl space-y-5 xll:p-4 xll:pb-7.5 xll:space-y-6 3xl:p-5 3xl:pb-10 3xl:rounded-14 3xl:space-y-7.5">
@@ -21,7 +22,7 @@ function BlogCird({ img, tittle, pera }) {
               {pera}
             </p>
           </div>
-          <RoundButton name="Read Full Blog" />
+          <RoundButton name="Read Full Blog" id={id} />
         </div>
       </div>
     </>

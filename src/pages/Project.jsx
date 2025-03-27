@@ -6,7 +6,7 @@ import Worksection from "../Components/Worksection";
 import TestimornialSection from "../Components/TestimornialSection";
 import FaqSection from "../Components/FaqSection";
 import Transform from "../Components/Transform";
-import FeaturesCird from "../Components/FeaturesCird";
+import FeaturesCird from "../Components/FeaturesCird"
 
 function Project() {
   const feturescurddata = [

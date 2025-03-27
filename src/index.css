@@ -173,7 +173,7 @@ header ul li a.active {
   .membar__grid,
   .achievemunts__grid,
   .awards__grid,
-  .join__grid, .apply__grid {
+  .join__grid, .apply__grid, .relatedblog__grid {
     grid-template-columns: 1fr 1fr;
   }
   .blog__grid {
@@ -245,9 +245,6 @@ header ul li a.active {
   }
   .membar__img {
     height: 300px;
-  }
-  .careers__right_hero {
-    width: 443px;
   }
 }
 

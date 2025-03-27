@@ -6,9 +6,11 @@ import AchievementCird from "../Components/AchievementCird";
 import TestimornialSection from "../Components/TestimornialSection";
 import FaqSection from "../Components/FaqSection";
 import Transform from "../Components/Transform";
+import { applycirddataphone } from "../data/ApplycirdDataPhone";
+import { applycirddatadesktop } from "../data/ApplyCirsDataDesktop";
 
 function Careers() {
-  const joinciraddata = [
+  const joincirddata = [
     {
       tittle: "Web Designer",
       icon: (
@@ -29,7 +31,7 @@ function Careers() {
         </svg>
       ),
       salare: "$45,000 - $60,000",
-      experience: "1+",
+      experience: "10",
       deadline: "30/09/2025",
       pera: "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, etc.), strong understanding of UI/UX design principles, responsive design expertise.",
     },
@@ -110,50 +112,6 @@ function Careers() {
       pera: "Strong organizational and communication skills, ability to manage project timelines and resources, experience in Agile project management methodologies.",
     },
   ];
-  const applycirddataphone = [
-    {
-      date: "Step 01",
-      tittle: "Explore Job Listings",
-      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
-    },
-    {
-      date: "Step 02",
-      tittle: "Review Job Description",
-      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
-    },
-    {
-      date: "Step 03",
-      tittle: "Prepare Your Application",
-      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
-    },
-    {
-      date: "Step 04",
-      tittle: "Review Job Description",
-      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
-    },
-  ];
-  const applycirddatadesktop = [
-    {
-      date: "Step 05",
-      tittle: "Submit Your Application",
-      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
-    },
-    {
-      date: "Step 06",
-      tittle: "Application Review",
-      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
-    },
-    {
-      date: "Step 07",
-      tittle: "Upload Your Documents",
-      pera: "Visit our website's page to explore the current job listings. Review the various roles available and select the position that aligns with your skills, experience, and career aspirations.",
-    },
-    {
-      date: "Step 08",
-      tittle: "Interview Process",
-      pera: "Click on the desired job title to view the detailed job description. Take your time to read through the responsibilities, requirements, and qualifications to ensure you have a clear understanding of the role.",
-    },
-  ];
   return (
     <>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-20 3xl:mb-24.7 about__hero xll:flex xll:gap-2.5 3xl:gap-5">
@@ -205,7 +163,7 @@ function Careers() {
         <div className="wrapper__div">
           <Commontittle tittle="Join Our Team at NexGen" />
           <div className="mt-2.5 3xl:mt-5 grid grid-cols-1 gap-2.5 xll:grid-cols-2 join__grid 3xl:gap-5">
-            {joinciraddata.map((data, i) => {
+            {joincirddata.map((data, i) => {
               return (
                 <JoinCird
                   key={i}

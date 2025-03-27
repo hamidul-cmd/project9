@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from "react-router";
 
-function RoundButton({ name }) {
+function RoundButton({ name, id }) {
+  const gotop = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
   return (
     <>
-      <a
-        href=""
-        className="flex items-center gap-2 text-12 font-medium leading-150 text-gray-70 font-roboto__mono xll:text-base xll:leading-150 3xl:gap-2.5 3xl:text-lg 3xl:leading-150"
+      <Link
+        onClick={gotop}
+        to={id}
+        className="flex w-fit items-center gap-2 text-12 font-medium leading-150 text-gray-70 font-roboto__mono xll:text-base xll:leading-150 3xl:gap-2.5 3xl:text-lg 3xl:leading-150"
       >
         <div className="p-3.5 bg-dark-12 border-dark-20 border rounded-full xll:p-4 3xl:p-5">
           <svg
@@ -21,7 +26,7 @@ function RoundButton({ name }) {
           </svg>
         </div>
         <div>{name}</div>
-      </a>
+      </Link>
     </>
   );
 }

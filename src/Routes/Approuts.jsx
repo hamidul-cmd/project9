@@ -8,7 +8,8 @@ import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import Project from "../pages/Project";
 import Service from "../pages/Service";
-import Gotop from "../../../project6/src/components/Gotop";
+import Gotop from "../components/Gotop";
+import Blogdetails from "../pages/Blogdetails";
 
 function Approuts() {
   return (
@@ -24,6 +25,10 @@ function Approuts() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects" element={<Project />} />
             <Route path="/services" element={<Service />} />
+            <Route path="/blog/:id" element={<Blogdetails />} />
+            <Route path="/blog/:id" element={<Blogdetails />} />
+            <Route path="/blog/:id" element={<Blogdetails />} />
+            <Route path="*" element={<h2 className="text-center text-2xl">Page Not Found</h2>} />
           </Route>
         </Routes>
       </BrowserRouter>

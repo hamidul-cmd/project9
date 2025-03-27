@@ -2,16 +2,15 @@ import React from "react";
 import Lefthero from "../Components/Lefthero";
 import CountUp from "react-countup";
 import Commontittle from "../Components/Commontittle";
-import membar1 from "../assets/membar1.png";
-import membar2 from "../assets/membar2.png";
-import membar3 from "../assets/membar3.png";
-import membar4 from "../assets/membar4.png";
 import MemberCird from "../Components/MemberCird";
 import AchievementCird from "../Components/AchievementCird";
 import AwardCird from "../Components/AwardCird";
 import TestimornialSection from "../Components/TestimornialSection";
 import FaqSection from "../Components/FaqSection";
 import Transform from "../Components/Transform";
+import { membardata } from "../data/Memberdata";
+import { awardsData } from "../data/AwardData";
+import { achievementsData } from "../data/AchievementData";
 
 function About() {
   const herodata = [
@@ -36,88 +35,7 @@ function About() {
       type: "K",
     },
   ];
-  const membardata = [
-    {
-      name: "John Smith",
-      jobtittle: "Co-Founder & CEO",
-      img: membar1,
-      fb_link: "https://www.facebook.com/hamidulislam.maruf.5",
-      twitter_link: "https://x.com/mdmaruf17204871",
-      linkedin_link:
-        "https://www.linkedin.com/in/hamidul-islam-maruf-9a1419353/",
-    },
-    {
-      name: "Sarah Adams",
-      jobtittle: "Head of Design",
-      img: membar2,
-      fb_link: "https://www.facebook.com/hamidulislam.maruf.5",
-      twitter_link: "https://x.com/mdmaruf17204871",
-      linkedin_link:
-        "https://www.linkedin.com/in/hamidul-islam-maruf-9a1419353/",
-    },
-    {
-      name: "Emily Johnson",
-      jobtittle: "Lead Web Developer",
-      img: membar3,
-      fb_link: "https://www.facebook.com/hamidulislam.maruf.5",
-      twitter_link: "https://x.com/mdmaruf17204871",
-      linkedin_link:
-        "https://www.linkedin.com/in/hamidul-islam-maruf-9a1419353/",
-    },
-    {
-      name: "William Lee",
-      jobtittle: "Lead Backend Developer",
-      img: membar4,
-      fb_link: "https://www.facebook.com/hamidulislam.maruf.5",
-      twitter_link: "https://x.com/mdmaruf17204871",
-      linkedin_link:
-        "https://www.linkedin.com/in/hamidul-islam-maruf-9a1419353/",
-    },
-  ];
-  const achievementsData = [
-    {
-      date: "September 2023",
-      tittle: "Global Recognition for Innovation",
-      pera: "In 2023, our digital agency gained global acclaim for innovative solutions, setting new standards in the ever-evolving digital lands",
-    },
-    {
-      date: "March 2019",
-      tittle: "Industry Leadership Acknowledged",
-      pera: "Recognized as an industry leader in 2019, our agency received prestigious awards, affirming our commitment to excellence and client satisfaction.",
-    },
-    {
-      date: "August 2015",
-      tittle: "Expansion into International Markets",
-      pera: "Expanding horizons in 2015, our agency successfully entered international markets, establishing a global presence and serving clients on a broader scale.",
-    },
-    {
-      date: "January 2010",
-      tittle: "Pioneering the Digital Frontier",
-      pera: "In 2010, our agency was born, pioneering the digital frontier and establishing core principles that have guided us through a decade of innovation.",
-    },
-  ];
-  const awardsData = [
-    {
-      date: "October 2017",
-      tittle: "Digital Excellence Award",
-      pera: "Recognition for outstanding contributions to the digital industry, celebrating our ability to deliver exceptional web design and development solutions that push the boundaries of creativity and functionality.",
-    },
-    {
-      date: "March 2019",
-      tittle: "Top Mobile App Development Agency",
-      pera: "Recognized as a top mobile app development agency by industry experts, highlighting our proficiency in delivering seamless and user-centric mobile applications.",
-    },
-    {
-      date: "July 2022",
-      tittle: "Best Digital Marketing Campaign",
-      pera: "Awarded for an exceptional digital marketing campaign with outstanding results, showcasing our data-driven strategies and targeted marketing efforts that achieved remarkable business growth for our clients.",
-    },
-    {
-      date: "November 2024",
-      tittle: "Innovative Tech Startup Award",
-      pera: "Recognition of our pioneering efforts as a technology startup, acknowledging our commitment to exploring and implementing cutting-edge technologies to drive innovation in the digital space.",
-    },
-  ];
+
   return (
     <>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-20 3xl:mb-24.7 about__hero xll:flex xll:gap-2.5 3xl:gap-5">
