@@ -224,7 +224,7 @@ function Home() {
           })}
           <a
             href=""
-            className="flex gap-1.5 items-center justify-center bg-dark-10 rounded-xl grow 3xl:gap-2.5"
+            className="flex gap-1.5 items-center justify-center bg-dark-10 rounded-xl grow 3xl:gap-2.5 retun "
           >
             <div className="p-3.5 bg-dark-6 border border-dark-15 rounded-full -rotate-45 3xl:p-5">
               <svg
