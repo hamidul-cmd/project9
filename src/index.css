@@ -173,7 +173,7 @@ header ul li a.active {
   .membar__grid,
   .achievemunts__grid,
   .awards__grid,
-  .join__grid, .apply__grid, .relatedblog__grid {
+  .join__grid, .apply__grid, .relatedblog__grid, .contact__grid {
     grid-template-columns: 1fr 1fr;
   }
   .blog__grid {

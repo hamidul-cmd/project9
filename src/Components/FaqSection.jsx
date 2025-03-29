@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import FaqBox from "./FaqBox";
 import Commontittle from "./Commontittle";
 
@@ -25,7 +25,16 @@ function FaqSection() {
       question: "What is your approach to user experience (UX) design?",
       ans: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
     },
+    {
+      question: "Can you integrate third-party APIs into our mobile app?",
+      ans: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+    },
   ];
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   return (
     <>
       <section className="px-4 xll:px-10 3xl:px-12.5 mb-12.5 xll:mb-20 3xl:mb-24.7">
@@ -33,7 +42,15 @@ function FaqSection() {
         <div className="mt-2.5 space-y-2.5 md:flex faq__perent xll:gap-2.5 md:space-y-0 3xl:gap-5 3xl:mt-5">
           <div className="left space-y-2.5 3xl:grow faq__box">
             {faqdata.map((data, i) => {
-              return <FaqBox key={i} question={data.question} ans={data.ans} />;
+              return (
+                <FaqBox
+                  key={i}
+                  question={data.question}
+                  ans={data.ans}
+                  isOpen={activeIndex === i}
+                  onClick={() => handleToggle(i)}
+                />
+              );
             })}
           </div>
           <div className="right bg-dark-10 rounded-xl p-7.5 font-roboto__flex faq__from h-fit xll:grow xll:p-12.5 3xl:p-14.5 3xl:grow-0 3xl:w-[746px]">
